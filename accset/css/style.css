@@ -1,0 +1,378 @@
+/* headers section start */
+.header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--while);
+    display: flex;
+    align-items: center;  
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.header .logo {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    margin-right: auto;
+    padding: 1.6rem;
+}
+.header .navbar a {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1.6rem;
+}
+.header .navbar a:hover,
+.header a:hover {
+    background-color: var(--hover-color);
+    color: var(--black);
+}
+#menu-btn {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+/* headers section end */
+
+/* matter section star */
+.matter {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   background: url(../img/mac.jpg) no-repeat;
+   background-size: cover;
+   background-position: center; 
+}
+.matter .content {
+   max-width: 90rem; 
+}
+.matter .content h3 {
+    font-size: 6.3rem;
+    color: var(--while);
+    font-weight: 400;
+}
+.matter .content p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    padding: 4rem 0;
+    color: var(--while);
+}
+.matter .content .link {
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    color: var(--while);
+}
+.matter .content .link a {
+    color: var(--while);
+    opacity: 0.6;
+    font-size: 1.8rem;
+}
+.matter .content .link a:hover {
+    opacity: 1;
+}
+/* matter section end */
+
+/* about section star */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.6rem;
+}
+.box-container .container {
+    margin-top: 5rem;
+}
+.about .box-container .container i {
+    font-size: 6.2rem;
+    text-align: center;
+    display: block;
+}
+.about .box-container .container span {
+    text-align: center;
+    margin: 2.5rem 0;
+    display: block;
+    font-size: 1.8rem;
+}
+.about .box-container .container p {
+    line-height: 1.8;
+    display: block;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* about section end */
+
+/* design section stars */
+.design {
+    background: var(--btn);
+}
+.design .box-container .content {
+    padding-left: 8px;
+}
+.design .box-container .content h2 {
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    font-weight: 400;
+    display: block;
+}
+.design .box-container .content span {
+    margin: 1.5rem 0;
+    display: block;
+    font-size: 1.5rem;
+}
+.design .box-container .image {
+    flex: 1 1 45rem;
+}
+.design .box-container .image img {
+    border-radius: 8px;
+    width: 100%;
+} 
+/* design section end */
+
+/* team section stars */
+.team .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.6rem;
+}
+.team .box-container .box {
+    margin-top: 5rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);}
+.team .box-container .image {
+    height: 25rem;
+    overflow: hidden;
+}
+.team .box-container .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.team .box-container .content {
+    padding: 0 1.6rem;
+}
+.team .box-container .content h3 {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+.team .box-container .content p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    opacity: 0.6;
+}
+.team .box-container .content span {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.team .box-container .content a {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+    text-align: center;
+    opacity: 1;
+}
+/* team section end */
+
+/* promo section stars */
+.promo {
+    background: var(--light-color);
+    padding: 6.6rem 1.6rem;
+}
+.promo .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.6rem;
+}
+.promo .box-container .box {
+    text-align: center;
+}
+.promo .box-container .box span {
+    font-size: 3.6rem;
+    color: var(--while);
+}
+.promo .box-container .box p {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--while);
+}    
+/* promo section end */
+
+/* work section stars */
+.work .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.6rem;
+    margin-top: 5rem;
+}
+.work .container .image {
+    height: 25rem;
+    overflow: hidden;
+}
+.work .box-container .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+/* work section end */
+
+/* skills section stars*/
+.skills {
+    background: var(--btn);
+    padding: 6.4rem 2.4rem;
+}
+.skills .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.6rem;
+}
+.skills .box-container .box h3 {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+.skills .box-container .box span {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    display: block;
+    line-height: 1.8;
+}
+.skills .box-container .box .content p {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+}
+.skills .box-container .box .content .row {
+    background: #9e9e9e;
+    height: 2.7rem;
+    color: var(--while);
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.skills .box-container .box .content .row .persent {
+    color: #fff!;
+    background: #616161;
+    text-align: center;
+    display: block;
+    height: 2.7rem;
+}
+/* skills section end*/
+
+/* pricing section starts */
+.pricing {
+    background: var(--light-color);
+}
+.pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.6rem;
+}
+.pricing .box-container .box {
+    margin-top: 8rem;
+}
+.pricing .box-container .box ul {
+    background-color: var(--while);
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+.pricing .box-container .box .box-header {
+    padding: 3.2rem 1.6rem;
+    background: var(--black);
+    color: var(--while); 
+}
+.pricing .box-container .box .box-header-pro {
+    padding: 4.8rem 1.6rem;
+    background: var(--red);
+    font-size: 2.4rem;
+    color: var(--while);
+    margin-top: -2rem;
+}
+.pricing .box-container .box ul li {
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.pricing .box-container .box ul li h2 {
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.pricing .box-container .box ul li span {
+    opacity: 0.6;
+}
+.pricing .box-container .box ul .box-button {
+    padding: 2.4rem 1.6rem;
+    display: block;
+}
+.pricing .box-container .box ul .box-button a {
+    margin-top: 0;
+    padding: 1.2rem 2.4rem;
+}
+/* pricing section end */
+
+/* Contact section stars */
+.contact {
+    background: #f1f1f1;
+}
+.contact .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.6rem;
+    margin-top: 5rem;
+}
+.contact .box-container .box p {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+.contact .box-container .box p i {
+    margin-right: 1.6rem;
+    font-size: 3rem;
+}
+.contact .box-section .active-form p {
+    margin: 1.5rem 0;
+
+}
+.contact .box-section .active-form p .text-input {
+    width: 100%;
+    padding: 0.8rem;
+}
+.contact .box-section img {
+    width: 100%;
+    margin-top: 4.8rem;
+    filter: grayscale(75%);
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+/* Contact section end */
+
+/* footer section starts */
+.footer {
+    background: #000;
+    padding: 6.4rem 0;
+    text-align: center;
+}
+.footer .link  {
+    margin: 1.6rem 0;
+    font-size: 2.4rem;
+    line-height: 1.8;
+}
+.footer .link a i {
+    color: var(--while);
+}
+.footer .link a i:hover {
+    opacity: 0.6;
+}
+.footer p,
+.footer p a {
+    color: var(--while);
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+.footer p a {
+    text-decoration: underline;
+}
+/* footer section end */

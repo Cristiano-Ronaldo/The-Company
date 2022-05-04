@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --while: #fff;
+    --black: #000;
+    --light-color: #616161;
+    --red: #f44336;
+    --hover-color: #ccc;
+    --btn : #f1f1f1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+section { 
+    padding: 12.8rem 1.6rem; 
+} 
+.heading {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black);
+}
+.sub {  
+    text-align: center;
+    margin: 1.8rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--while);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    opacity: 0.6;
+    color: rgb(0, 0, 0) ;
+    background: rgb(241, 241, 241);
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 1;
+    background: #ccc;
+}
+.button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: var(--while);
+    background: var(--black);
+    cursor: pointer;
+}
+.button:hover {
+    background: var(--hover-color) ;
+    color: var(--black);
+}

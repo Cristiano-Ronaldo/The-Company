@@ -1,0 +1,49 @@
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+  
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+        margin-right: 1.6rem;
+    }
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+    .header .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30rem;
+        height: 100vh;
+        background: var(--black);
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);   
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+        color: var(--while);
+        font-size: 1.8rem;
+        display: block;
+    }
+    .header .navbar a i {
+        display: none;
+    }
+    
+    .matter .content h3 {
+        font-size: 4.5rem;
+    }
+    .matter .content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
